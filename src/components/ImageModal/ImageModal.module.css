@@ -21,15 +21,17 @@
 
 .ModalImage {
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .CloseButton {
+  padding: 1px;
   position: absolute;
   top: -20px;
   right: -20px;
+  color: #6a0dad;
   background: #fff;
   border: none;
   border-radius: 50%;
@@ -39,4 +41,35 @@
   cursor: pointer;
   line-height: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ImageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.ImageTitle {
+  position: absolute;
+  bottom: 48px; /* adjust as needed above likes */
+  left: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 2;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.Likes {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #eee;
+  font-weight: 500;
 }

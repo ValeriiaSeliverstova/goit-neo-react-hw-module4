@@ -1,6 +1,7 @@
 import css from "./SearchBar.module.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaSearch } from "react-icons/fa";
 
 export default function SearchBar({ onSubmit }) {
   const handleSubmit = (event) => {
@@ -14,17 +15,19 @@ export default function SearchBar({ onSubmit }) {
   };
 
   return (
-    <header>
-      <form className={css.SearchForm} onSubmit={handleSubmit}>
+    <header className={css.searchBar}>
+      <form className={css.searchForm} onSubmit={handleSubmit}>
+        <button type="submit" className={css.searchButton}>
+          <FaSearch />
+        </button>
         <input
+          className={css.searchInput}
           name="query"
-          className="input"
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Search images and photos"
+          placeholder="Search images"
         />
-        <button type="submit">Search</button>
       </form>
     </header>
   );

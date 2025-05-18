@@ -2,7 +2,7 @@
   display: block;
   margin: 32px auto;
   padding: 12px 24px;
-  background-color: #6a0dad; /* Deep purple */
+  background-color: #6a0dad;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -14,7 +14,7 @@
 }
 
 .LoadMoreBtn:hover {
-  background-color: #7b1fa2; /* Lighter purple */
+  background-color: #7b1fa2;
 }
 
 .LoadMoreBtn:active {
